@@ -7,7 +7,7 @@ export async function enablePhoneNotifications(){
   const adminSite=location.pathname.includes('/admin/');const registration=await navigator.serviceWorker.register(adminSite?'../sw.js':'./sw.js',{scope:adminSite?'../':'./'});
   await navigator.serviceWorker.ready;
   let subscription=await registration.pushManager.getSubscription();
-  if(!subscription) subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:decodeKey(PUSH_PUBLIC_KEY)});
+  if(subscription){try{await subscription.unsubscribe()}catch{}}subscription=await registration.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:decodeKey(PUSH_PUBLIC_KEY)});
   const json=subscription.toJSON();
   const {error}=await supabase.rpc('mithaq_save_push_subscription',{p_endpoint:json.endpoint,p_p256dh:json.keys?.p256dh,p_auth:json.keys?.auth});
   if(error) throw error;
