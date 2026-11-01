@@ -1,0 +1,1 @@
+import {createClient} from 'https://esm.sh/@supabase/supabase-js@2.57.4';import{SUPABASE_URL,SUPABASE_KEY}from'./config.js';const isAdmin=location.pathname.includes('/admin');export const supabase=createClient(SUPABASE_URL,SUPABASE_KEY,{auth:{persistSession:isAdmin,autoRefreshToken:isAdmin,detectSessionInUrl:true,lock:async(_name,_timeout,fn)=>fn()}});

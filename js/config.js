@@ -1,0 +1,1 @@
+export const SUPABASE_URL='https://hpmvzlvrwyehtqtzylzs.supabase.co';export const SUPABASE_KEY='sb_publishable_canY0yV0c19Y-OGk_OCZww_l19IzNdN';export const STORAGE_BUCKET='mithaq-attachments';export const MAX_FILE_SIZE=25*1024*1024;
