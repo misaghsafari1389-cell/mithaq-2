@@ -16,3 +16,9 @@
 ## موارد باقی‌مانده برای انتشار نهایی
 
 تست میکروفون وابسته به permission دستگاه است و باید روی مرورگر نهایی با ورودی واقعی یا mock کنترل‌شده اجرا شود. تست upload فایل و signed URL، آزمون Realtime بین دو نشست مدیر و Lighthouse روی URL نهایی GitHub Pages پس از انتشار اجرا می‌شوند. هیچ‌کدام پیش از اجرای واقعی موفق اعلام نمی‌شوند.
+
+## انتشار نهایی
+
+- repository به `misaghsafari1389-cell/mithaq-2` منتقل و Public شد.
+- GitHub Pages از `main / (root)` فعال شد.
+- URL عمومی، URL پنل مدیریت و `manus-routes.json` در ۲۰۲۶-۱۱-۰۱ با HTTP 200 بررسی شدند.

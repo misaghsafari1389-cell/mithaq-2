@@ -12,7 +12,7 @@
 
 ## انتشار
 
-این پروژه برای GitHub Pages طراحی شده است. پس از اتصال repository و فعال‌سازی Pages، لینک واقعی هر دو مسیر در `LINKS.txt` جایگزین شود. راهنمای backup در `docs/BACKUP.md` و وضعیت آزمایش در `docs/TEST-REPORT.md` ثبت شده است.
+این پروژه روی GitHub Pages منتشر شده است. لینک عمومی و پنل مدیریت در `LINKS.txt` ثبت شده‌اند. راهنمای backup در `docs/BACKUP.md` و وضعیت آزمایش در `docs/TEST-REPORT.md` ثبت شده است.
 
 ## امنیت
 

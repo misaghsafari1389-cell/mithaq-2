@@ -1,5 +1,7 @@
 Mithaq 2 links
 
-Public site: pending GitHub Pages publication
-Admin panel: pending GitHub Pages publication
+Public site: https://misaghsafari1389-cell.github.io/mithaq-2/
+Admin panel: https://misaghsafari1389-cell.github.io/mithaq-2/admin/
+Routes manifest: https://misaghsafari1389-cell.github.io/mithaq-2/manus-routes.json
+Repository: https://github.com/misaghsafari1389-cell/mithaq-2
 Supabase project: https://hpmvzlvrwyehtqtzylzs.supabase.co
