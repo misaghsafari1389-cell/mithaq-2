@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import arabic_reshaper
-from bidi.algorithm import get_display
 from pathlib import Path
 import math, random
 W,H=1920,1080
@@ -9,7 +8,7 @@ REG='/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Regular.ttf'
 BOLD='/usr/share/fonts/opentype/fonts-hosny-amiri/Amiri-Bold.ttf'
 LOGO='assets/mithaq2-icon-192.png'
 
-def rtl(s): return get_display(arabic_reshaper.reshape(s))
+def rtl(s): return arabic_reshaper.reshape(s)
 def font(path,size): return ImageFont.truetype(path,size)
 def txt(d,xy,s,size,fill,anchor='ra',bold=False):
     d.text(xy,rtl(s),font=font(BOLD if bold else REG,size),fill=fill,anchor=anchor)
